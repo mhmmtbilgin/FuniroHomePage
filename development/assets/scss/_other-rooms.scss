@@ -1,0 +1,210 @@
+ .other-rooms {
+ 	font-family: 'Gilroy-Regular', sans-serif;
+ 	height: 670px;
+ 	background-color: $rooms-bgcolor;
+ 	box-sizing: border-box;
+ 	margin: auto;
+	 margin-top: 50px;
+
+
+ 	&__container {
+ 		background-color: $rooms-bgcolor;
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: space-evenly;
+ 		align-items: center;
+
+
+
+ 		&__content {
+ 			background-color: $rooms-bgcolor;
+ 			width: 378px;
+ 			height: 582px;
+ 			display: flex;
+ 			flex-direction: column;
+ 			align-items: flex-start;
+ 			justify-content: center;
+ 			margin-top: 44px;
+
+
+
+
+ 			&__title {
+ 				display: inline;
+ 				background-color: $rooms-bgcolor;
+ 				color: $title-color;
+ 				font-size: 40px;
+ 				font-weight: 700;
+ 				margin: 0;
+
+ 			}
+
+ 			&__subtitle {
+ 				background-color: $rooms-bgcolor;
+ 				color: $subtitle-color;
+
+ 			}
+
+ 			&__link {
+ 				text-decoration: none;
+ 				width: 176px;
+ 				height: 48px;
+ 				padding: 12px 40px 12px 40px;
+ 				background-color: $btn-bgcolor;
+ 				color: white;
+ 				font-weight: 600;
+
+ 			}
+			 &__link:hover{
+				 opacity: 0.8;
+				 transition: 0.3s;
+			 }
+ 		}
+
+ 		&__current {
+ 	display: flex;
+	 padding: 24px;
+	 align-items: flex-end;
+ 			width: 404px;
+ 			height: 582px;
+ 			background-image: url('../images/slider.png');
+
+			 
+ 
+
+ 			&__content {
+				width: 217px;
+				height: 130px;
+				background-color: #ffffffa8;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+ 				
+				
+ 				&__subtitle {
+					 height: 0px;
+				margin-left: 32px;
+				margin-top: 20px;
+				margin-bottom: 30px;
+					background-color: #ffffff1c;
+					color: #616161;
+					;
+					
+				
+ 				}
+				 &__title{
+					 margin: 0px;
+					 padding: 0px;
+					display: inline;
+					 margin-left: 32px;
+					 font-size: 26px;
+					 background-color: #ffffff00;
+					 
+				 }
+				 &__btn{
+					 background-color: $btn-bgcolor;
+					 width: 48px;
+					 height: 48px;
+					 border: none;
+					
+				 }
+				 &__btn:hover{
+				opacity: 0.7;
+					 transition: 0.3s;
+				 }
+ 			}
+
+
+
+ 		}
+
+ 		&__next {
+ 			width: 372px;
+ 			height: 582px;
+ 			background-color: $rooms-bgcolor;
+
+			 
+
+
+
+ 			&__icons {
+ 				background-color: $rooms-bgcolor;
+
+ 				.svg {
+ 					background-color: $rooms-bgcolor;
+ 					margin-top: 40px;
+
+ 				}
+
+ 			}
+
+ 		}
+
+ 	}
+
+
+ }
+
+ @include mq(desktop, max) {
+	.other-rooms__container__next{
+		display: none;
+			}
+		
+}
+ @include mq(tablet, max) {
+	
+	.other-rooms__container__current{
+		display: none;
+			}
+}
+@include mq(mobile, max) {
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

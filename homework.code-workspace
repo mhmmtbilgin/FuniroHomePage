@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.njk": "html",
+			"*.svg": "html"
+		},
+		"emmet.includeLanguages": {
+			"nunjuks": "html"
+		},
+		"todohighlight.keywords": [
+			"NOTES:"
+		]
+	}
+	
+}

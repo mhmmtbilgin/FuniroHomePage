@@ -1,0 +1,26 @@
+@import './mixin/font-size';
+@import './mixin/z-index';
+@import './mixin/media-query';
+
+@import './globals/variables';
+
+
+@import './header';
+@import './base';
+@import './home';
+@import './share';
+@import './footer';
+@import './other-rooms';
+@import './blogs.scss';
+
+.main  {
+	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+	justify-content: flex-start;
+ }
+
+@import './header';
+@import './base';
+@import './home';
+@import './products';

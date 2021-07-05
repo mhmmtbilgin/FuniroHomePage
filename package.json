@@ -1,0 +1,18 @@
+{
+	"name": "responsive-template",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/Frontend-Bootcamp-2021/responsive-template",
+	"license": "MIT",
+	"devDependencies": {
+		"nunjucks": "^3.2.3",
+		"parcel": "^2.0.0-beta.2",
+		"parcel-bundler": "^1.12.5",
+		"parcel-plugin-nunjucks": "^2.2.2",
+		"sass": "^1.34.1"
+	},
+	"scripts": {
+		"start": "parcel serve ./development/index.njk",
+		"build": "parcel build ./development/index.njk"
+	}
+}

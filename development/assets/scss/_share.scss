@@ -1,0 +1,225 @@
+
+img {
+    object-fit: cover;
+}
+.share {
+    font-family: 'Gilroy-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	
+    
+    &__titles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    &__first {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__second {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -35px;
+        justify-content: space-between;
+        
+        
+        
+        
+        &__left {
+            display: flex;
+            flex-direction: column;
+            
+            
+
+            &__top {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                margin-bottom: 16px;
+                :last-child {
+                    margin-left: 16px;
+                }
+                
+            }
+
+            &__bottom {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                :last-child {
+                    margin-left: 16px;
+                }
+            }
+        }
+
+        &__mid {
+            margin: 0 16px;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            
+
+            &__top {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                margin-bottom: 16px;
+                :last-child {
+                    margin-left: 16px;
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                :last-child {
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include mq(desktop, max) {
+
+    .share {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+				margin-top: 500px;
+
+        &__titles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            
+
+            &__left {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                
+            }
+
+            &__right {
+                display: flex;
+                flex-direction: column;
+                margin-top: -70px;
+            }
+
+            &__mid {
+                display: none;
+            }
+        }
+    }
+
+
+
+
+}
+
+@include mq(tablet, max) {
+
+    .share {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+				margin-top: 850px;
+
+        &__titles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &__top {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    :first-child {
+                        display: none;
+                    }
+                    
+                }
+
+                &__bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    :first-child {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+
+            &__right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &__top {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 90px;
+                    :last-child {
+                        display: none;
+                    }
+                }
+
+                &__bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    :first-child {
+                        display: none;
+                    }
+                }
+            }
+
+            &__mid {
+                display: none;
+            }
+        }
+    }
+
+}
